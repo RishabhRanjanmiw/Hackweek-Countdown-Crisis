@@ -1,13 +1,14 @@
-'use client';
-import Countdown from './components/Countdown';
 import CommunityInfo from './components/CommunityInfo';
+import Countdown from './components/Countdown';
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <main style={{ backgroundColor: typeof window !== 'undefined' ? '#f0f0f0' : '#f0f0f1', padding: '20px', borderRadius: '10px'}}>
+    <main style={{ textAlign: 'center', padding: '2rem' }}>
+      <h1>HackWeek Countdown</h1>
       <CommunityInfo />
       <Countdown />
     </main>
   );
 }
+
 
